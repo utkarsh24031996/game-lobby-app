@@ -41,11 +41,11 @@ TextStyle xlboldtitle() {
       color: darkblue, fontWeight: FontWeight.bold, fontSize: 22);
 }
 TextStyle titleTextStyle() {
-    return TextStyle(color: Colors.grey, fontWeight: FontWeight.w300);
+    return const TextStyle(color: Colors.grey, fontWeight: FontWeight.w300);
   }
 
   TextStyle valuTextStyle() {
-    return TextStyle(fontSize: 16, fontWeight: FontWeight.w600);
+    return const TextStyle(fontSize: 16, fontWeight: FontWeight.w600);
   }
 
 

@@ -7,7 +7,6 @@ import 'package:game_room/screens/my_profile.dart';
 import 'package:game_room/utils/hive_helper.dart';
 import 'package:game_room/utils/local_storage.dart';
 import '../apicall/api_call.dart';
-import 'home_screen.dart';
 
 class OtpScreen extends StatelessWidget {
   static String routName = '/otp_screen';

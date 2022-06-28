@@ -1,6 +1,5 @@
 import 'package:buttons_tabbar/buttons_tabbar.dart';
 import 'package:flutter/material.dart';
-import 'package:game_room/componant/custom_buttom.dart';
 import 'package:game_room/componant/game_description_card.dart';
 import 'package:game_room/constant.dart';
 import 'package:game_room/screens/match_details.dart';

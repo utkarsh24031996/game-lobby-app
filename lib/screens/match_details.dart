@@ -96,7 +96,7 @@ class _MatchDetailsState extends State<MatchDetails> {
                   height: scHeight(context) * 0.08,
                   alignment: Alignment.centerLeft,
                   decoration: BoxDecoration(
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                             blurStyle: BlurStyle.outer,
                             spreadRadius: 2,
@@ -106,7 +106,7 @@ class _MatchDetailsState extends State<MatchDetails> {
                       ],
                       borderRadius: BorderRadius.circular(8),
                       color: Colors.white),
-                  child: Text('Taha Ansari'),
+                  child: const Text('Taha Ansari'),
                 )
               ],
             ));
@@ -124,7 +124,7 @@ class _MatchDetailsState extends State<MatchDetails> {
                   height: scHeight(context) / 4.5,
                   width: double.infinity,
                   child: ClipRRect(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                           topLeft: Radius.circular(20),
                           topRight: Radius.circular(20)),
                       child: Image.asset(
@@ -165,8 +165,8 @@ class _MatchDetailsState extends State<MatchDetails> {
                   alignment: Alignment.center,
                   height: scHeight(context) * 0.04,
                   width: double.infinity,
-                  decoration: BoxDecoration(color: Colors.green),
-                  child: Text(
+                  decoration: const BoxDecoration(color: Colors.green),
+                  child: const Text(
                     'STARTS IN',
                     style: TextStyle(color: Colors.white),
                   ),
@@ -190,11 +190,11 @@ class _MatchDetailsState extends State<MatchDetails> {
           children: [
             Text(
               text,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
             Text(
               prize,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
           ],
         ),

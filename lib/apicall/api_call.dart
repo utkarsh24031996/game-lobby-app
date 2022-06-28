@@ -127,10 +127,11 @@ class ApiCalls {
   }
 
   ///get banner images
-  Future<GetBannerList> getbannerimages() async {
+  Future<GetBannerList> getbannerimages({required String token}) async {
     String apigetBannerlist = "$urlHeader/getBannerList";
 
-    var response = await http.get(Uri.parse(apigetBannerlist));
+    var response = await http.get(Uri.parse(apigetBannerlist),
+        headers: {HttpHeaders.authorizationHeader: 'Bearer $token'});
     try {
       if (response.statusCode == 200) {
         if (response.body.isNotEmpty) {
@@ -150,10 +151,11 @@ class ApiCalls {
   }
 
   ///get game list
-  Future<GetGameList> getGameLists() async {
+  Future<GetGameList> getGameLists({required String token}) async {
     String gamelistUrl = "$urlHeader/getGameList";
 
-    var response = await http.get(Uri.parse(gamelistUrl));
+    var response = await http.get(Uri.parse(gamelistUrl),
+        headers: {HttpHeaders.authorizationHeader: 'Bearer $token'});
     try {
       if (response.statusCode == 200) {
         if (response.body.isNotEmpty) {

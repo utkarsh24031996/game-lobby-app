@@ -5,6 +5,7 @@ import 'package:game_room/apicall/api_call.dart';
 import 'package:game_room/componant/app_drawer.dart';
 import 'package:game_room/constant.dart';
 import 'package:game_room/screens/notification.dart';
+import 'package:game_room/utils/hive_helper.dart';
 
 import '../componant/game_card.dart';
 
@@ -56,8 +57,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   getAllApiCalls()async{
-    await ApiCalls().getbannerimages();
-    await ApiCalls().getGameLists();
+    await HiveDbServices().getLoginCred();
+      await ApiCalls().getbannerimages(token: loginCred[0].token);
+    await ApiCalls().getGameLists(token: loginCred[0].token);
 
   }
 

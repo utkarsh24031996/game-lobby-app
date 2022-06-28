@@ -3,12 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:game_room/constant.dart';
 import 'package:game_room/routes.dart';
 import 'package:game_room/screens/check_login.dart';
-import 'package:game_room/screens/login_screen.dart';
-import 'package:game_room/screens/my_profile.dart';
 import 'package:game_room/utils/local_storage.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'componant/bottom_navigation.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

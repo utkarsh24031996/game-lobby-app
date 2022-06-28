@@ -18,8 +18,8 @@ class _CreateRoomState extends State<CreateRoom> {
       child: Scaffold(
         floatingActionButton: FloatingActionButton(onPressed: () {}),
         appBar: AppBar(
-          title: Text('Create Room'),
-          leading: BackButton(color: Colors.black),
+          title: const Text('Create Room'),
+          leading: const BackButton(color: Colors.black),
         ),
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 5),
@@ -32,7 +32,7 @@ class _CreateRoomState extends State<CreateRoom> {
   ListView createRooms() {
     return ListView.builder(
       itemBuilder: (context, index) => Container(
-        child: Text('My Rooms'),
+        child: const Text('My Rooms'),
       ),
     );
   }
@@ -40,7 +40,7 @@ class _CreateRoomState extends State<CreateRoom> {
   ListView status() {
     return ListView.builder(
       itemBuilder: (context, index) => Container(
-        child: Text('status'),
+        child: const Text('status'),
       ),
     );
   }

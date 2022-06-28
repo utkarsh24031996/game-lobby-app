@@ -26,7 +26,7 @@ class SignupScreen extends StatelessWidget {
             ),
             //image
             Expanded(flex: 2, child: Image.asset('assets/images/singup.png')),
-         Divider(),
+         const Divider(),
             const Text(
               'Singup',
               style: TextStyle(color: Colors.grey),
@@ -89,13 +89,13 @@ class SignupScreen extends StatelessWidget {
             const SizedBox(
               height: 20,
             ),
-            Divider(),
+            const Divider(),
             CircleAvatar(
               radius: 30,
               backgroundColor: Colors.white,
               child: Image.asset('assets/icons/google_logo.png'),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
         ]),)
